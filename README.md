@@ -4,5 +4,5 @@ Collection of instructions for improving old modpacks with updated mods.
 
 ## Index
 
-- [FTB Infinity Evolved Skyblock](/FTB/Infinity_Evolved_Skyblock)
+- [FTB Infinity Evolved Skyblock](/FTB/Infinity_Evolved_Skyblock/README.md)
 - FTB Regrowth (WIP)
