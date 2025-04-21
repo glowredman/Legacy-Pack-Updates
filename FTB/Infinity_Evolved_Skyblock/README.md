@@ -4,6 +4,38 @@
 
 **Instructions Version:** 2.0.1+20250419
 
+## New Mods
+
+### Required Mods
+
+|name|GitHub repository|download|notes|
+|:---|:---|:---|:---|
+|AE2 Fluid Crafting Rework|https://github.com/GTNewHorizons/AE2FluidCraft-Rework|https://github.com/GTNewHorizons/AE2FluidCraft-Rework/releases|Replaces Extra Cells 2|
+|AppleCore|https://github.com/GTNewHorizons/AppleCore|https://github.com/GTNewHorizons/AppleCore/releases|Required for Cooking for Blockheads|
+|Healer|https://github.com/Glease/Healer|https://github.com/Glease/Healer/releases|Patches [CVE-2021-44228](https://www.cve.org/CVERecord?id=CVE-2021-44228)|
+|ReSiever|https://github.com/glowredman/ReSiever|https://github.com/glowredman/ReSiever/releases|Makes Ex Nihilo's and Thermal Expansion's NEI handlers work with the updated Not Enough Items version|
+|ServerUtilities|https://github.com/GTNewHorizons/ServerUtilities|https://github.com/GTNewHorizons/ServerUtilities/releases|Replaces FTBLib, FTBUtilities and Morpheus|
+|UniMixins|https://github.com/LegacyModdingMC/UniMixins|https://github.com/LegacyModdingMC/UniMixins/releases|Required for mods using Mixins (e.g. ReSiever)|
+
+### Optional Mods
+
+|name|GitHub repository|download|notes|
+|:---|:---|:---|:---|
+|AE2 Wireless Crafting Terminal|https://github.com/GTNewHorizons/WirelessCraftingTerminal/|https://github.com/GTNewHorizons/WirelessCraftingTerminal//releases|Adds an AE2 Wireless Terminal with a crafting grid|
+|ArchaicFix|https://github.com/embeddedt/ArchaicFix|https://github.com/embeddedt/ArchaicFix/releases|Swiss army knife of bugfixes and performance improvements for MC 1.7.10|
+|Better P2P|https://github.com/GTNewHorizons/BetterP2P/|https://github.com/GTNewHorizons/BetterP2P//releases|GUI support for P2P networks|
+|BugTorch|https://github.com/jss2a98aj/BugTorch|https://github.com/jss2a98aj/BugTorch/releases|Bug-fixes for Minecraft 1.7.10|
+|CoreTweaks|https://github.com/GTNewHorizons/CoreTweaks|https://github.com/GTNewHorizons/CoreTweaks/releases|A bunch of random bug fixes, optimizations and tweaks (1.7.10)|
+|Forgelin|https://github.com/GTNewHorizons/Forgelin|https://github.com/GTNewHorizons/Forgelin/releases|Required for Better P2P|
+|GTNH Lib|https://github.com/GTNewHorizons/GTNHLib|https://github.com/GTNewHorizons/GTNHLib/releases|Required for Hodgepodge|
+|Hodgepodge|https://github.com/GTNewHorizons/Hodgepodge|https://github.com/GTNewHorizons/Hodgepodge/releases|A HodgePodge of patches|
+|lwjgl3ify|https://github.com/GTNewHorizons/lwjgl3ify|https://github.com/GTNewHorizons/lwjgl3ify/releases|A mod to run Minecraft 1.7.10 using LWJGL3 and Java 17+ (This has special [installation instructions](https://github.com/GTNewHorizons/lwjgl3ify/blob/master/README.MD#client))|
+|NotEnoughEnergistics|https://github.com/GTNewHorizons/NotEnoughEnergistics|https://github.com/GTNewHorizons/NotEnoughEnergistics/releases|Better NEI/AE2 compat|
+|OAuth|https://github.com/GTNewHorizons/oauth|https://github.com/GTNewHorizons/oauth/releases|Adds a way to auth within your game in the multiplayer screen|
+|TCNEIAdditions|https://github.com/GTNewHorizons/TCNEIAdditions/|https://github.com/GTNewHorizons/TCNEIAdditions//releases|Improvements for the TC NEI Plugin|
+|Thaumcraft 4 Tweaks|https://github.com/Glease/TC4Tweaks|https://www.curseforge.com/minecraft/mc-mods/tc4tweaks/files|A mod that adds a bit of functionality and a bit of performance into thaumcraft 4|
+|Thaumcraft Research Tweaks|https://github.com/GTNewHorizons/thaumcraft-research-tweaks|https://github.com/GTNewHorizons/thaumcraft-research-tweaks/releases|This mod brings a reworked research table GUI.|
+
 ## Updated Mods
 
 See [this gist](https://gist.github.com/glowredman/f65d45376451df6709e468a9b9c327b4) for a list of confirmed working mod versions.
@@ -72,3 +104,66 @@ See [this gist](https://gist.github.com/glowredman/f65d45376451df6709e468a9b9c32
 |Wailia Harvestability|1.1.6|newest available|https://github.com/GTNewHorizons/WailaHarvestability|https://github.com/GTNewHorizons/WailaHarvestability/releases||
 |What Are We Looking At|1.0.5.120|newest available|https://github.com/GTNewHorizons/WAWLA|https://github.com/GTNewHorizons/WAWLA/releases||
 |WR-CBE|1.4.1.9|newest available|https://github.com/GTNewHorizons/WirelessRedstone-CBE|https://github.com/GTNewHorizons/WirelessRedstone-CBE/releases||
+
+## Removed Mods
+
+|name|version|reason|
+|:---|:---:|:---|
+|Binnie Patcher|1.8.2|no longer needed|
+|CodeChicken Lib|1.1.3.138|now shipped as part of CodeChicken Core|
+|CoFH Lib|1.2.1-185|was never needed, the code is shipped as part of CoFHCore|
+|Extra Cells 2|2.3.14|replaced by AE2 Fluid Crafting Rework|
+|FTBLib|1.0.18.2|replaced by Server Utilities|
+|FTBUtilities|1.0.18.2|replaced by Server Utilities|
+|Storage Drawers: Biomes O' Plenty Pack|1.1.1|now shipped as part of Storage Drawers|
+|Storage Drawers: Forestry Pack|1.1.2|now shipped as part of Storage Drawers|
+|Storage Drawers: Misc Pack|1.1.2|now shipped as part of Storage Drawers|
+|Storage Drawers: Natura Pack|1.1.1|now shipped as part of Storage Drawers|
+
+## Config Changes
+
+### Required Mods
+
+config/
+- AppliedEnergistics2/AppliedEnergistics2.cfg
+  - `p2ptunnels/P2PTunnelGregtech=false`
+- Botania.cfg
+  - `general/recipes.enabled=true`
+- cookingbook.cfg
+  - Rename to `cookingforblockheads.cfg`
+  - `modules/Dreamcraft=false`
+  - `modules/Gregtech5U=false`
+- enderio/EnderIO.cfg
+```
+  dark steel/darkSteelPowerDamgeAbsorptionRatios <
+        0.5
+        0.6
+        0.7
+        0.85
+        0.95
+     >
+    ```
+- ProjectRed.cfg
+  - `Machine Settings/Enable the Diamond Block Breaker=true`
+- StorageDrawers.cfg
+  - `integration/enableGTNH=false`
+- TinkersConstruct.cfg
+  - `difficulty changes/Remove Gold Cast Recipes=false`
+
+scripts/
+- AppliedEnergistics.zs
+```zs
+#oredictionary card
+recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:55>, [<appliedenergistics2:item.ItemMultiMaterial:28>, <minecraft:book>]);
+
+#processing pattern terminal
+recipes.addShapeless(<appliedenergistics2:item.ItemMultiPart:500>, [<appliedenergistics2:item.ItemMultiPart:340>, <appliedenergistics2:item.ItemMultiMaterial:36>]);
+```
+- Thaumcraft.zs
+  - Replace line 105 with this:
+```zs
+mods.thaumcraft.Research.addResearch("MAGICALLOGS", "EXASTRIS_THAUM", "arbor 16, herba 16", -2 as int, 2, 4, <Thaumcraft:blockMagicalLog>);
+```
+
+### Optional Mods
+
