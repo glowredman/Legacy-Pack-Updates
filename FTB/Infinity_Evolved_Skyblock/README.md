@@ -2,7 +2,7 @@
 
 [FTB Website](https://www.feed-the-beast.com/modpacks/20-ftb-infinity-evolved-skyblock) | [CurseForge](https://www.curseforge.com/minecraft/modpacks/ftb-infinity-evolved-skyblock)
 
-**Instructions Version:** 2.0.1+20250421
+**Instructions Version:** 2.0.1+20250422
 
 ## New Mods
 
@@ -14,6 +14,7 @@
 |AppleCore|https://github.com/GTNewHorizons/AppleCore|https://github.com/GTNewHorizons/AppleCore/releases|Required for Cooking for Blockheads|
 |GTNH Lib|https://github.com/GTNewHorizons/GTNHLib|https://github.com/GTNewHorizons/GTNHLib/releases|Required for Applied Energistics 2|
 |Healer|https://github.com/Glease/Healer|https://github.com/Glease/Healer/releases|Patches [CVE-2021-44228](https://www.cve.org/CVERecord?id=CVE-2021-44228)|
+|Modular UI 2|https://github.com/GTNewHorizons/ModularUI2|https://github.com/GTNewHorizons/ModularUI2/releases|Required for Logistics Pipes|
 |ReSiever|https://github.com/glowredman/ReSiever|https://github.com/glowredman/ReSiever/releases|Makes Ex Nihilo's and Thermal Expansion's NEI handlers work with the updated Not Enough Items version|
 |UniMixins|https://github.com/LegacyModdingMC/UniMixins|https://github.com/LegacyModdingMC/UniMixins/releases|Required for mods using Mixins (e.g. ReSiever)|
 
@@ -91,7 +92,7 @@ See [this gist](https://gist.github.com/glowredman/f65d45376451df6709e468a9b9c32
 |OpenBlocks|1.6|newest available|https://github.com/GTNewHorizons/OpenBlocks|https://github.com/GTNewHorizons/OpenBlocks/releases||
 |OpenMods|0.10|newest available|https://github.com/GTNewHorizons/OpenModsLib|https://github.com/GTNewHorizons/OpenModsLib/releases||
 |ProjectRed|4.7.0pre12.95|newest available|https://github.com/GTNewHorizons/ProjectRed|https://github.com/GTNewHorizons/ProjectRed/releases||
-|Railcraft|9.12.2.0|9.12.2.1|https://github.com/Railcraft/Railcraft|https://www.curseforge.com/minecraft/mc-mods/railcraft/files/2458987||
+|Railcraft|9.12.2.0|newest available|https://github.com/GTNewHorizons/Railcraft|https://github.com/GTNewHorizons/Railcraft/releases||
 |Steve's Carts 2|2.0.0.b18|newest available|https://github.com/GTNewHorizons/SC2|https://github.com/GTNewHorizons/SC2/releases||
 |Storage Drawers|1.10.8|newest available|https://github.com/GTNewHorizons/StorageDrawers|https://github.com/GTNewHorizons/StorageDrawers/releases||
 |TC Inventory Scanning|1.0.11|newest available|https://github.com/GTNewHorizons/ThaumicInventoryScanning|https://github.com/GTNewHorizons/ThaumicInventoryScanning/releases||
@@ -124,47 +125,51 @@ See [this gist](https://gist.github.com/glowredman/f65d45376451df6709e468a9b9c32
 ### Required Mods
 
 config/
-- AppliedEnergistics2/AppliedEnergistics2.cfg
-  - `p2ptunnels/P2PTunnelGregtech=false`
-- Botania.cfg
-  - `general/recipes.enabled=true`
+- AppliedEnergistics2/
+  - AppliedEnergistics2.cfg
+    - `p2ptunnels/P2PTunnelGregtech=false`
+- AWWayofTime.cfg
+```
+    "demon configs"/"dimension blacklist for the demon portal activation" <
+     >
+```
 - cookingbook.cfg
   - Rename to `cookingforblockheads.cfg`
   - `modules/Dreamcraft=false`
   - `modules/Gregtech5U=false`
-- enderio/EnderIO.cfg
+- enderio/
+  - EnderIO.cfg
 ```
-  dark steel/darkSteelPowerDamgeAbsorptionRatios <
+  "dark steel"/darkSteelPowerDamgeAbsorptionRatios <
         0.5
         0.6
         0.7
         0.85
         0.95
      >
-    ```
+```
+- IronChest.cfg
+  - `general/enableNetheriteChests=false`
+  - `general/enableSilverChests=true`
 - ProjectRed.cfg
-  - `Machine Settings/Enable the Diamond Block Breaker=true`
+  - `"Machine Settings"/"Enable the Diamond Block Breaker"=true`
+- railcraft/
+  - modules.cfg
+    - `modules/advtanks=false`
+    - `modules/gregtech=false`
 - StorageDrawers.cfg
   - `integration/enableGTNH=false`
-- TinkersConstruct.cfg
-  - `difficulty changes/Remove Gold Cast Recipes=false`
+  - `packs/autoEnablePacks=false`
+  - `packs/enableBiomesOPlenty=true`
+  - `packs/enableForestry=true`
+  - `packs/enableMisc=true`
+  - `packs/enableNatura=true`
 
 scripts/
 - AppliedEnergistics.zs
   - Remove line 28
-  - Add these lines:
-```zs
-#oredictionary card
-recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:55>, [<appliedenergistics2:item.ItemMultiMaterial:28>, <minecraft:book>]);
-
-#processing pattern terminal
-recipes.addShapeless(<appliedenergistics2:item.ItemMultiPart:500>, [<appliedenergistics2:item.ItemMultiPart:340>, <appliedenergistics2:item.ItemMultiMaterial:36>]);
-```
 - Thaumcraft.zs
-  - Replace line 105 with this:
-```zs
-mods.thaumcraft.Research.addResearch("MAGICALLOGS", "EXASTRIS_THAUM", "arbor 16, herba 16", -2 as int, 2, 4, <Thaumcraft:blockMagicalLog>);
-```
+  - In line 105, add ` as int` after `-2`
 
 ### Optional Mods
 
