@@ -140,11 +140,11 @@ config/
 - CustomMainMenu/
   - mainmenu.json
     - Replace the links in these lines:
-	  77: `https://www.feed-the-beast.com/`
-	  92: `https://www.feed-the-beast.com/support`
-	  107: `https://www.feed-the-beast.com/modpacks/20-ftb-infinity-evolved-skyblock?tab=versions`
-	  122: `https://forum.feed-the-beast.com/`
-	  137: `https://www.feed-the-beast.com/modpacks/server-files`
+	  - 77: `https://www.feed-the-beast.com/`
+	  - 92: `https://www.feed-the-beast.com/support`
+	  - 107: `https://www.feed-the-beast.com/modpacks/20-ftb-infinity-evolved-skyblock?tab=versions`
+	  - 122: `https://forum.feed-the-beast.com/`
+	  - 137: `https://www.feed-the-beast.com/modpacks/server-files`
 - enderio/
   - EnderIO.cfg
 ```
