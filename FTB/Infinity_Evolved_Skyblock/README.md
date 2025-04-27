@@ -2,7 +2,7 @@
 
 [FTB Website](https://www.feed-the-beast.com/modpacks/20-ftb-infinity-evolved-skyblock) | [CurseForge](https://www.curseforge.com/minecraft/modpacks/ftb-infinity-evolved-skyblock)
 
-**Instructions Version:** 2.0.1+20250422
+**Instructions Version:** 2.0.1+20250427
 
 ## New Mods
 
@@ -12,10 +12,12 @@
 |:---|:---|:---|:---|
 |AE2 Fluid Crafting Rework|https://github.com/GTNewHorizons/AE2FluidCraft-Rework|https://github.com/GTNewHorizons/AE2FluidCraft-Rework/releases|Replaces Extra Cells 2|
 |AppleCore|https://github.com/GTNewHorizons/AppleCore|https://github.com/GTNewHorizons/AppleCore/releases|Required for Cooking for Blockheads|
+|Baubles Expanded|https://github.com/jss2a98aj/Baubles-Expanded|https://github.com/jss2a98aj/Baubles-Expanded/releases|Replaces Baubles|
 |GTNH Lib|https://github.com/GTNewHorizons/GTNHLib|https://github.com/GTNewHorizons/GTNHLib/releases|Required for Applied Energistics 2|
 |Healer|https://github.com/Glease/Healer|https://github.com/Glease/Healer/releases|Patches [CVE-2021-44228](https://www.cve.org/CVERecord?id=CVE-2021-44228)|
 |Modular UI 2|https://github.com/GTNewHorizons/ModularUI2|https://github.com/GTNewHorizons/ModularUI2/releases|Required for Logistics Pipes|
 |ReSiever|https://github.com/glowredman/ReSiever|https://github.com/glowredman/ReSiever/releases|Makes Ex Nihilo's and Thermal Expansion's NEI handlers work with the updated Not Enough Items version|
+|TX Loader|https://github.com/GTNewHorizons/TX-Loader|https://github.com/GTNewHorizons/TX-Loader/releases|Replaces Resource Loader|
 |UniMixins|https://github.com/LegacyModdingMC/UniMixins|https://github.com/LegacyModdingMC/UniMixins/releases|Required for mods using Mixins (e.g. ReSiever)|
 
 ### Optional Mods
@@ -25,7 +27,7 @@
 |AE2 Wireless Crafting Terminal|https://github.com/GTNewHorizons/WirelessCraftingTerminal/|https://github.com/GTNewHorizons/WirelessCraftingTerminal//releases|Adds an AE2 Wireless Terminal with a crafting grid|
 |ArchaicFix|https://github.com/embeddedt/ArchaicFix|https://github.com/embeddedt/ArchaicFix/releases|Swiss army knife of bugfixes and performance improvements for MC 1.7.10|
 |Better P2P|https://github.com/GTNewHorizons/BetterP2P/|https://github.com/GTNewHorizons/BetterP2P//releases|GUI support for P2P networks|
-|BugTorch|https://github.com/jss2a98aj/BugTorch|https://github.com/jss2a98aj/BugTorch/releases|Bug-fixes for Minecraft 1.7.10|
+|BugTorch|https://github.com/jss2a98aj/BugTorch|https://github.com/jss2a98aj/BugTorch/releases|Bug-fixes for Minecraft 1.7.10 (Incompatible with FastCraft!)|
 |CoreTweaks|https://github.com/GTNewHorizons/CoreTweaks|https://github.com/GTNewHorizons/CoreTweaks/releases|A bunch of random bug fixes, optimizations and tweaks (1.7.10)|
 |Forgelin|https://github.com/GTNewHorizons/Forgelin|https://github.com/GTNewHorizons/Forgelin/releases|Required for Better P2P|
 |Hodgepodge|https://github.com/GTNewHorizons/Hodgepodge|https://github.com/GTNewHorizons/Hodgepodge/releases|A HodgePodge of patches|
@@ -47,7 +49,6 @@ See [this gist](https://gist.github.com/glowredman/f65d45376451df6709e468a9b9c32
 |:---|:---:|:---:|:---|:---|:---|
 |Applied Energistics 2|rv3-beta-6|newest available|https://github.com/GTNewHorizons/Applied-Energistics-2-Unofficial|https://github.com/GTNewHorizons/Applied-Energistics-2-Unofficial/releases||
 |Avaritia|1.11|1.13|https://github.com/SpitefulFox/Avaritia|https://www.curseforge.com/minecraft/mc-mods/avaritia/files/2519595||
-|Baubles|1.0.1.10|newest available|https://github.com/GTNewHorizons/Baubles|https://github.com/GTNewHorizons/Baubles/releases||
 |BD Lib|1.9.4.109|newest available|https://github.com/GTNewHorizons/bdlib|https://github.com/GTNewHorizons/bdlib/releases|Patches [CVE-2021-33806](https://www.cve.org/CVERecord?id=CVE-2021-33806)|
 |Binnie's Mods|2.0-pre14|newest available|https://github.com/GTNewHorizons/Binnie|https://github.com/GTNewHorizons/Binnie/releases||
 |Blood Magic|1.3.3-17|newest available|https://github.com/GTNewHorizons/BloodMagic|https://github.com/GTNewHorizons/BloodMagic/releases||
@@ -111,10 +112,12 @@ See [this gist](https://gist.github.com/glowredman/f65d45376451df6709e468a9b9c32
 
 |name|version|reason|
 |:---|:---:|:---|
+|Baubles|1.0.1.10|Replaced by Baubles Expanded|
 |Binnie Patcher|1.8.2|no longer needed|
 |CodeChicken Lib|1.1.3.138|now shipped as part of CodeChicken Core|
 |CoFH Lib|1.2.1-185|was never needed, the code is shipped as part of CoFHCore|
 |Extra Cells 2|2.3.14|replaced by AE2 Fluid Crafting Rework|
+|Resource Loader|1.3|replaced by TX Loader|
 |Storage Drawers: Biomes O' Plenty Pack|1.1.1|now shipped as part of Storage Drawers|
 |Storage Drawers: Forestry Pack|1.1.2|now shipped as part of Storage Drawers|
 |Storage Drawers: Misc Pack|1.1.2|now shipped as part of Storage Drawers|
@@ -125,6 +128,7 @@ See [this gist](https://gist.github.com/glowredman/f65d45376451df6709e468a9b9c32
 ### Required Mods
 
 config/
+- Add [these](/FTB/Infinity_Evolved_Skyblock/config/) files
 - AppliedEnergistics2/
   - AppliedEnergistics2.cfg
     - `p2ptunnels/P2PTunnelGregtech=false`

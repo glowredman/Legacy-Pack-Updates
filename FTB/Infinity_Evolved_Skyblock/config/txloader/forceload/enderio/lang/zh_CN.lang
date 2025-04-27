@@ -1,0 +1,4 @@
+enderio.power.tmb=t/mB
+enderio.fluid.millibucket.abr=mB
+enderio.fluid.millibucketsTick=mB/t
+enderio.gui.weather.requiredfluid=需要流体: %s mB
