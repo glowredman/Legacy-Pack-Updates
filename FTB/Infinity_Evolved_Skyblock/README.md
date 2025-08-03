@@ -2,7 +2,7 @@
 
 [FTB Website](https://www.feed-the-beast.com/modpacks/20-ftb-infinity-evolved-skyblock) | [CurseForge](https://www.curseforge.com/minecraft/modpacks/ftb-infinity-evolved-skyblock)
 
-**Instructions Version:** 2.0.1+20250427
+**Instructions Version:** 2.0.1+20250803
 
 ## New Mods
 
@@ -77,6 +77,7 @@ See [this gist](https://gist.github.com/glowredman/f65d45376451df6709e468a9b9c32
 |Gendustry|1.6.3.132|newest available|https://github.com/GTNewHorizons/gendustry|https://github.com/GTNewHorizons/gendustry/releases||
 |Guide-API|1.0.1-20|newest available|https://github.com/GTNewHorizons/Guide-API|https://github.com/GTNewHorizons/Guide-API/releases||
 |Iguana Tinker Tweaks|2.1.6|newest available|https://github.com/GTNewHorizons/IguanaTweaksTConstruct|https://github.com/GTNewHorizons/IguanaTweaksTConstruct/releases||
+|IndustrialCraft 2|2.2.827-experimental|newest available||https://www.curseforge.com/minecraft/mc-mods/industrial-craft/files/all?version=1.7.10||
 |INpureCore|1.0.0B9-62|newest available|https://github.com/GTNewHorizons/INpureCore|https://github.com/GTNewHorizons/INpureCore/releases||
 |Inventory Tweaks|1.59-dev-152|newest available|https://github.com/GTNewHorizons/inventory-tweaks|https://github.com/GTNewHorizons/inventory-tweaks/releases||
 |Iron Chest|6.0.62.742|newest available|https://github.com/GTNewHorizons/ironchest|https://github.com/GTNewHorizons/ironchest/releases||
@@ -107,6 +108,7 @@ See [this gist](https://gist.github.com/glowredman/f65d45376451df6709e468a9b9c32
 |Wailia Harvestability|1.1.6|newest available|https://github.com/GTNewHorizons/WailaHarvestability|https://github.com/GTNewHorizons/WailaHarvestability/releases||
 |What Are We Looking At|1.0.5.120|newest available|https://github.com/GTNewHorizons/WAWLA|https://github.com/GTNewHorizons/WAWLA/releases||
 |WR-CBE|1.4.1.9|newest available|https://github.com/GTNewHorizons/WirelessRedstone-CBE|https://github.com/GTNewHorizons/WirelessRedstone-CBE/releases||
+|YUNoMakeGoodMap|4.0.0.12|newest available|https://github.com/glowredman/YUNoMakeGoodMap|https://github.com/glowredman/YUNoMakeGoodMap/releases||
 
 ## Removed Mods
 
@@ -163,6 +165,7 @@ config/
 - IronChest.cfg
   - `general/enableNetheriteChests=false`
   - `general/enableSilverChests=true`
+  - `general/enableSteelChests=false`
 - ProjectRed.cfg
   - `"Machine Settings"/"Enable the Diamond Block Breaker"=true`
 - railcraft/
